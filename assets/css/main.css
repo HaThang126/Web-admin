@@ -1,0 +1,130 @@
+.header{
+    height: 120px;
+    background-image: linear-gradient(0,#F8472F,#FE6332)
+}
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.header__navbar-item, .header__navbar-link{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--white-color);
+    text-decoration: none;
+    margin: 0px 4px;
+    position: relative;
+}
+
+.header__navbar-item,.header__navbar-icon-link,.header__navbar-link,.header__navbar-icon,
+.header__navbar-list {
+    display: inline-flex;
+    align-content: center;
+}
+.header__navbar-item:hover, .header__navbar-link:hover{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+.header__navbar--bold{
+    font-weight: 400;
+}
+.header__navbar--sperate::before{
+    content: "";
+    display: block;
+    position:absolute;
+    border-left:1px solid var(--white-color) ;
+    height: 12px;
+    transform: translateX(-4px);
+    top: 2px;
+}
+
+.header__navbar-icon-link{
+    color: var(--white-color);
+    text-decoration: none;
+    margin-left: 4px;
+}
+.header__navbar-item--has-qr:hover .header__qr{
+    display: block;
+}
+.header__qr{
+    position: absolute;
+    top: 152%;
+    background-color: var(--white-color);
+    width: 186px;
+    border-radius: 2px;
+    width: 186px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+.header__qr:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:10px;
+    top: -9px;
+}
+
+.header__qr-download-img{
+    height:17px;
+}
+.header__qr-img{
+    width: 100%;
+    border-radius: 2px;
+
+}
+.header__qr-app{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+/*Thong bao*/
+.header__thongbao{
+    position: absolute;
+    background-color: var(--white-color);
+    width: 401px;
+    height: 186px;
+    top: 152%;
+    right: 0;
+}
+.header__thongbao-header h3
+{
+    color:#BDBDBD;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+}
+.header__thongbao-list{ 
+    
+    list-style: none;
+
+}
+.header__thongbao-item{
+    display: flex;
+}
+.header__thongbao-img{
+    width: 55px;
+    height: 100%;
+
+}
+.header__thongbao-info{
+    color: var(--black-color);
+}
+.header__thongbao-name{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.header__thongbao-decription{
+    font-size: 1.1rem;
+}
+.header_thongbao-footer{
+    color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
